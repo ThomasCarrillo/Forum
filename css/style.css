@@ -1,0 +1,368 @@
+
+/*---- Zone principale ----*/
+html,body{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	background: #313131;
+	min-width: 480px;
+}
+/*-------------------------*/
+
+/*---- Zone header ----*/
+header,h1{
+	font-family: 'TitanOne';
+	color: #00B906;
+	font-size: 1.6em;
+	margin: 0;
+	align-self: center;
+}
+
+header{
+	width: 100%;
+	background: #212121;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	border-bottom: #515151 2px ridge;
+}
+/*----------------------*/
+
+/* zone basique */
+
+ul{
+	list-style: none;
+	display: flex;
+	justify-content: flex-end;
+	padding-right: 30px;
+}
+
+li{
+	padding-left: 20px;
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+a:hover{
+	text-decoration: none;
+	color: green;
+}
+
+h2{
+	font-family: 'TitanOne';
+	color: #00B906;
+	text-align: center;
+}
+/*----------------------*/
+
+/*---- Zone de classe ----*/
+.mainLogo{
+	width: 180px;
+	height: 80px;
+	padding: 30px 10px 30px 30px;
+}
+
+.titleZone{
+	width: 50%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.navZone{
+	width: 50%;
+}
+
+.content{
+  	width:80%;
+  	display: flex;
+  	justify-content: center;
+  	flex-direction: column;
+}
+/*------------------------*/
+
+
+/* Zone de classe */
+
+.flex{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.center{
+	display: flex;
+	justify-content: center;
+}
+
+.box{
+	background: #232323;
+	border: #363636 3px ridge;
+	border-radius: 20px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	margin-top: 30px;
+	padding: 30px;
+}
+
+/*------------------------*/
+
+/* zone de Formulaire */
+
+.topTitle{
+	/*border: #00f616 3px ridge;*/
+	width: 100%;
+}
+
+
+
+.connect{
+	width: 50%;
+	background: #232323;
+	border: #363636 3px ridge;
+	border-radius: 20px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	margin-top: 30px;
+}
+
+.formIcon{
+	width: 32px;
+	height: auto;
+	align-items: center;
+}
+
+::-webkit-input-placeholder {
+	text-align: center;
+ }
+ 
+ :-moz-placeholder { /* Firefox 18- */
+	text-align: center;  
+ }
+ 
+ ::-moz-placeholder {  /* Firefox 19+ */
+	text-align: center;  
+ }
+ 
+ :-ms-input-placeholder {  
+	text-align: center; 
+ }
+
+input[type=text] {
+  	width: 30%;
+ 	padding: 6px 10px;
+  	border-radius: 20px;
+  	margin: 10px 20px;
+}
+
+input[type=text]:focus {
+	 background: #22bb22;
+}
+
+input[type=password] {
+	width: 30%;
+	padding: 6px 10px;
+	border-radius: 20px;
+	margin: 10px 20px;
+}
+
+input[type=password]:focus {
+	background: #22bb22;
+}
+
+input[type=submit] {
+  width: 20%;
+  padding: 6px 10px;
+  border-radius: 20px;
+  margin: 10px 20px;
+  transition: 0.5s ease-in-out;
+  min-width: 100px;
+}
+
+
+
+input[type=submit]:hover{
+  
+  background: #00B906;
+
+  transform: scale(1.02);
+  transition: 0.2s ease-in-out;
+}
+/*------------------------*/
+
+/* ZONE DE POST */
+
+.postName{
+	color: #00B906;
+	font-size: 1.2em;
+}
+.postDate{
+	color: #00B906;
+	font-size: 0.8em;
+}
+
+.postTitle{
+	color: #00B906;
+	font-size: 1.2em;
+}
+
+.postMessage{
+	color: #00B906;
+}
+
+
+.postMain{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+
+.postContainer{
+	width: 90%;
+	background: #232323;
+	border: #363636 3px ridge;
+	border-radius: 20px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	margin-top: 30px;
+	padding: 10px;
+	align-items: center;
+}
+
+.postContainer p{
+	margin: 0;
+	padding: 10px;
+}
+/*------------------------*/
+
+/* ZONE TOPPER */
+
+.topper{
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	margin: 0 30px 30px 0;
+}
+
+.topIcon{
+	width: 60px;
+	height: 60px;
+	transition: 0.35s ease-in-out;
+}
+
+.topIcon:hover{
+	transform: rotateY(180deg);
+	transition: 0.35s ease-in-out;
+}
+/*------------------------*/
+
+/* ZONE D'ALERTE */
+
+.alert {
+    border: 2px solid black;
+    border-radius: 4px;
+    padding: 2px 5px;
+    width: 30%;
+    margin-top: 60px !important;
+    margin-left: 15px !important;
+	align-self: center;
+	margin-bottom: 20px;
+}
+
+.alert-err {
+    background-color: rgba(224, 14, 14, 0.6);
+}
+
+.alert-ok {
+    background-color: rgba(66, 204, 24, 0.4);
+}
+
+.alert p {
+    font-size: 13px;
+    text-align: center;
+}
+/*----------------/
+
+/*---- Zone de font ----*/
+@font-face {
+	font-family: "Chewy";
+	src: url('../ressources/fonts/Chewy/Chewy-Regular.ttf');
+}
+
+@font-face {
+	font-family: "TitanOne";
+	src: url('../ressources/fonts/Titan_One/TitanOne-Regular.ttf');
+}
+/*----------------------*/
+
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 720px) {
+  ul{
+  	flex-direction: column;
+  	border-left: #00B906 solid 3px;
+  	padding-left: 0;
+  }
+
+  p{
+  	text-align: justify;
+  }
+}
+
+@media screen and (max-width: 480px) {
+	ul{
+		flex-direction: column;
+		border-left: #00B906 solid 3px;
+		padding-left: 0;
+	}
+  
+	p{
+		text-align: justify;
+	}
+  }
+
+/*----------------------*/
+
+/*******TEST*********/
+
+
+.btn {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.btn-navbar {
+    display: none;
+    float: right;
+    padding: 12px 15px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.icon-bar {
+    display: block;
+    width: 18px;
+    height: 3px;
+    background-color: #CECECE;
+    -webkit-border-radius: 1px; /* Ce sont des préfixes, pour que les navigateurs */
+       -moz-border-radius: 1px; /* prennent en charge les nouvelles propriétés. */
+            border-radius: 1px;
+}
+
+.icon-bar + .icon-bar { /* Le + permet de sélectionner les éléments qui suivent */
+    margin-top: 3px;
+}
+
+
+/********************/
+
