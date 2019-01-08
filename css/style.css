@@ -119,8 +119,6 @@ h2{
 	width: 100%;
 }
 
-
-
 .connect{
 	width: 50%;
 	background: #232323;
@@ -141,17 +139,17 @@ h2{
 ::-webkit-input-placeholder {
 	text-align: center;
  }
- 
+
  :-moz-placeholder { /* Firefox 18- */
-	text-align: center;  
+	text-align: center;
  }
- 
+
  ::-moz-placeholder {  /* Firefox 19+ */
-	text-align: center;  
+	text-align: center;
  }
- 
- :-ms-input-placeholder {  
-	text-align: center; 
+
+ :-ms-input-placeholder {
+	text-align: center;
  }
 
 input[type=text] {
@@ -188,7 +186,7 @@ input[type=submit] {
 
 
 input[type=submit]:hover{
-  
+
   background: #00B906;
 
   transform: scale(1.02);
@@ -325,7 +323,7 @@ input[type=submit]:hover{
 		border-left: #00B906 solid 3px;
 		padding-left: 0;
 	}
-  
+
 	p{
 		text-align: justify;
 	}
@@ -365,4 +363,3 @@ input[type=submit]:hover{
 
 
 /********************/
-
