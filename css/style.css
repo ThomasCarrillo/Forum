@@ -8,9 +8,7 @@ html,body{
 	background: #313131;
 	min-width: 480px;
 }
-/*-------------------------*/
 
-/*---- Zone header ----*/
 header,h1{
 	font-family: 'TitanOne';
 	color: #00B906;
@@ -363,3 +361,76 @@ input[type=submit]:hover{
 
 
 /********************/
+/*---- Zone footer ----*/
+
+.footerRow1{
+	background: #212121;
+	color: #fff;
+	text-align: center;
+	margin-top: 25%;
+	padding-top: 1%;
+	border-top: #515151 2px ridge;
+}
+
+.footerRow2{
+	background: #212121;
+	color: #fff;
+	text-align: center;
+	padding-bottom: 0.8%;
+}
+
+.contact{
+	font-size: 20px;
+}
+
+hr
+{
+	max-width: 50px;
+	border-color: #fff;
+}
+
+.fa-phone{
+	margin-right: 1%;
+}
+
+.tel:hover{
+	color: #00B906;
+}
+
+.mail:hover{
+	color: #00B906;
+}
+
+.fa-envelope-o{
+	margin-right: 1%;
+}
+
+.form-control {
+	height: auto;
+	font-size: 1rem;
+	padding: .375rem .75rem;
+}
+
+.bloc_icones i{
+	padding: 25px 10px 30px 10px;
+}
+
+.fa-facebook:hover{
+	color: #3b5998;
+}
+
+.fa-linkedin:hover{
+	color: #007bb5;
+}
+
+.fa-instagram:hover{
+	color: #e95950;
+}
+
+.fa-twitter:hover{
+	color: #55acee;
+}
+
+.fa-youtube:hover{
+	color: #ff0000;
+}
