@@ -15,10 +15,10 @@
 		<ul>
 			<li><a href="index.php">Accueil</a></li>
 			<?php if(isset($_SESSION['login'])) {echo "<li><a href=\"post.php\">Poster</a></li>";}?>
-			<li><a href="connexion.php">Connexion</a></li>
+			<?php if(!isset($_SESSION['login'])) {echo "<li><a href=\"connexion.php\">Connexion</a></li>";}?>
 			<?php if(isset($_SESSION['login'])) {echo "<li><a href=\"index.php?action=logout\" title=\"Déconnexion\">Deconnexion</a></li>";}?>
 			<?php if(!isset($_SESSION['login'])) {echo "<li><a href=\"inscription.php\">Inscription</a></li>";}?>
-		
+			<?php if(isset($_SESSION['login'])) {echo "<li><a href=\"accesAdmin.php\">Admin</a></li>";}?>	
 		</ul>
 	</div>
 

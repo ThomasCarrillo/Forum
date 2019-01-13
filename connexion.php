@@ -23,6 +23,7 @@
                         $_SESSION['mail'] = $usersinfo['mail'];
                         $_SESSION['password'] = $usersinfo['password'];
                         $message = '<div class="alert alert-ok"><p>Vous êtes connecté</p></div>';
+                        header ('Location:index.php');
                     } else {
                         $erreur = '<div class="alert alert-err"><p><strong>Erreur !</strong> Mauvais login ou mot de passe !</p></div>'; 
                     }

@@ -8,9 +8,7 @@ html,body{
 	background: #313131;
 	min-width: 480px;
 }
-/*-------------------------*/
 
-/*---- Zone header ----*/
 header,h1{
 	font-family: 'TitanOne';
 	color: #00B906;
@@ -94,6 +92,44 @@ h2{
 	align-items: center;
 }
 
+.maxWidthHr{
+	width: 80%;
+	border-color: #00B906;
+	max-width: none;
+
+}
+
+.comment{
+	color: rgb(6, 131, 10);
+	transition: 0.35s ease-in-out;
+}
+
+.comment:hover{
+	color: #00A906;
+	transition: 0.35s ease-in-out;
+	animation: shake 0.15s cubic-bezier(.82,.97,.99,1) both;
+}
+
+.commentContainer{
+	width: 70%;
+	background: #272727;
+	border: #363636 3px ridge;
+	border-radius: 20px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	margin-top: 30px;
+	padding: 10px;
+	align-items: center;
+}
+
+.addComment{
+	font-family: 'TitanOne';
+	font-size: 70px;
+	color: #00B906;
+	text-align: center;	
+}
+
 .center{
 	display: flex;
 	justify-content: center;
@@ -119,8 +155,6 @@ h2{
 	width: 100%;
 }
 
-
-
 .connect{
 	width: 50%;
 	background: #232323;
@@ -141,18 +175,29 @@ h2{
 ::-webkit-input-placeholder {
 	text-align: center;
  }
- 
+
  :-moz-placeholder { /* Firefox 18- */
-	text-align: center;  
+	text-align: center;
  }
- 
+
  ::-moz-placeholder {  /* Firefox 19+ */
-	text-align: center;  
+	text-align: center;
  }
- 
- :-ms-input-placeholder {  
-	text-align: center; 
+
+ :-ms-input-placeholder {
+	text-align: center;
  }
+
+ textarea{
+	padding: 6px 10px;
+	  border-radius: 20px;
+	  resize: none;
+ }
+
+ textarea:focus{
+	background: #22bb22;
+
+}
 
 input[type=text] {
   	width: 30%;
@@ -188,7 +233,7 @@ input[type=submit] {
 
 
 input[type=submit]:hover{
-  
+
   background: #00B906;
 
   transform: scale(1.02);
@@ -198,22 +243,22 @@ input[type=submit]:hover{
 
 /* ZONE DE POST */
 
-.postName{
+.postIntro{
 	color: #00B906;
-	font-size: 1.2em;
-}
-.postDate{
-	color: #00B906;
-	font-size: 0.8em;
+	font-size: 1em;
 }
 
 .postTitle{
 	color: #00B906;
-	font-size: 1.2em;
+	font-size: 1.6em;
 }
 
 .postMessage{
 	color: #00B906;
+	word-wrap: break-word;
+	width: 100%;
+	text-align: center;
+	padding: 20px;
 }
 
 
@@ -303,7 +348,26 @@ input[type=submit]:hover{
 }
 /*----------------------*/
 
+/* Zone de keyframes */
 
+@keyframes shake {
+	10%, 90% {
+	  transform: translate3d(-1px, 0, 0);
+	}
+	
+	20%, 80% {
+	  transform: translate3d(2px, 0, 0);
+	}
+  
+	30%, 50%, 70% {
+	  transform: translate3d(-4px, 0, 0);
+	}
+  
+	40%, 60% {
+	  transform: translate3d(4px, 0, 0);
+	}
+  }
+/*----------------------*/
 
 /* MEDIA QUERIES */
 
@@ -314,8 +378,8 @@ input[type=submit]:hover{
   	padding-left: 0;
   }
 
-  p{
-  	text-align: justify;
+  footer p{
+	text-align: center;
   }
 }
 
@@ -325,7 +389,7 @@ input[type=submit]:hover{
 		border-left: #00B906 solid 3px;
 		padding-left: 0;
 	}
-  
+
 	p{
 		text-align: justify;
 	}
@@ -333,36 +397,94 @@ input[type=submit]:hover{
 
 /*----------------------*/
 
-/*******TEST*********/
+/*---- Zone footer ----*/
 
-
-.btn {
-    display: inline-block;
-    cursor: pointer;
+.footerRow1{
+	background: #212121;
+	color: #fff;
+	text-align: center;
+	margin-top: 25%;
+	padding-top: 1%;
+	border-top: #515151 2px ridge;
 }
 
-.btn-navbar {
-    display: none;
-    float: right;
-    padding: 12px 15px;
-    margin-right: 5px;
-    margin-left: 5px;
+.footerRow2{
+	background: #212121;
+	color: #fff;
+	text-align: center;
+	padding-bottom: 0.8%;
 }
 
-.icon-bar {
-    display: block;
-    width: 18px;
-    height: 3px;
-    background-color: #CECECE;
-    -webkit-border-radius: 1px; /* Ce sont des préfixes, pour que les navigateurs */
-       -moz-border-radius: 1px; /* prennent en charge les nouvelles propriétés. */
-            border-radius: 1px;
+.contact{
+	font-size: 20px;
 }
 
-.icon-bar + .icon-bar { /* Le + permet de sélectionner les éléments qui suivent */
-    margin-top: 3px;
+hr
+{
+	max-width: 50px;
+	border-color: #fff;
+}
+
+.fa-phone{
+	margin-right: 1%;
+}
+
+.tel:hover{
+	color: #00B906;
+}
+
+.mail:hover{
+	color: #00B906;
+}
+
+.fa-envelope-o{
+	margin-right: 1%;
+}
+
+.form-control {
+	height: auto;
+	font-size: 1rem;
+	padding: .375rem .75rem;
+}
+
+.bloc_icones i{
+	padding: 25px 10px 30px 10px;
+}
+
+.fa-facebook:hover{
+	color: #3b5998;
 }
 
 
-/********************/
+.comment{
+	color: rgb(6, 131, 10);
+	transition: 0.35s ease-in-out;
+	font-size: 60px;
+}
 
+.comment:hover{
+	color: #00A906;
+	transition: 0.35s ease-in-out;
+	animation: shake 0.15s cubic-bezier(.82,.97,.99,1) both;
+}
+
+
+.fa fa-plus-circle{
+	color: #00B906;
+}
+
+.fa-linkedin:hover{
+	color: #007bb5;
+}
+
+.fa-instagram:hover{
+	color: #e95950;
+}
+
+.fa-twitter:hover{
+	color: #55acee;
+}
+
+.fa-youtube:hover{
+	color: #ff0000;
+}

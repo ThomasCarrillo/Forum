@@ -1,20 +1,5 @@
 <?php
         require('elementsPHP/bdd.php');
-        
-        if(isset($_POST['submit'])){
-            $login = htmlspecialchars($_POST["login"]);
-            $mail = htmlspecialchars($_POST["mail"]);
-            $password = htmlspecialchars($_POST["password"]);
-            $validPassword = htmlspecialchars($_POST["validPassword"]);
-            
-            if (!empty($_POST['login']) AND !empty($_POST['password']) AND ($password === $validPassword)) {
-                $password = password_hash($password,CRYPT_BLOWFISH);
-                $requser = $bdd->prepare("INSERT INTO user (login,mail,password,dateCreation) VALUES (?,?,?);");     
-                $requser->execute(array($login,$mail,$password,"CURRENT_TIME()")); 
-            } else {         
-                $erreur = '<div class="alert alert-err"><p><strong>Erreur !</strong> Veuillez saisir correctement vos informations !</p></div>'; 
-            }
-        }
 ?>
 <!doctype html>
 <html lang="fr">

@@ -10,7 +10,7 @@
             $password = password_hash($password,CRYPT_BLOWFISH);
             $requser = $bdd->prepare("INSERT INTO user (login,mail,password) VALUES (?,?,?);");     
             $requser->execute(array($login,$mail,$password)); 
-            header ('Location:../index.php');
+            header ('Location:../connexion.php');
         } else {
             header ('Location:../inscription.php');
         }
